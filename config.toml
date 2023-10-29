@@ -1,0 +1,21 @@
+# 训练设置
+save_dir = "result/FedDDPG-Avg"
+seed = 100
+device = "cpu"
+merge_interval = 20
+merge_num = 500
+merge_target = true
+episode_num_eval = 3
+embedding_dim = 0
+# 环境设置
+env_num = 10
+heter_num = 3
+env = "envs:HalfCheetah-heter"
+gamma = 0.98
+# DDPG设置
+hidden_dim = 400
+buffer_capicity = 10000
+buffer_init_ratio = 0.30
+lr = 0.001
+batch_size = 100
+sigma = 0.10
