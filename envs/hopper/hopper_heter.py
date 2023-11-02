@@ -211,9 +211,8 @@ class HopperEnv(MujocoEnv, utils.EzPickle):
         option.set("gravity", f"0 0 {-15+10*self.heter[0]}")
         # 脚的长宽
         foot_geom = root.find("worldbody/body/body/body/body/geom")
-        s1, s2 = foot_geom.get("size").split(" ")
         s1 = 0.03 + 0.06 * self.heter[1]
-        s1 = 0.095 + 0.20 * self.heter[2]
+        s2 = 0.095 + 0.20 * self.heter[2]
         foot_geom.set("size", f"{s1} {s2}")
 
         tmp_folder = Path(tempfile.gettempdir())
