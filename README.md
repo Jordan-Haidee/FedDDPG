@@ -8,5 +8,5 @@ pip install git+https://github.com/Farama-Foundation/Gymnasium.git@db18efb107b2c
 ```
 There are other dependencies needed to be installed. But, you can complete them easily.
 ```powershell
-pip install numpy matplotlib pandas torch tqdm addict
+pip install numpy matplotlib pandas torch mujoco tqdm addict
 ```
